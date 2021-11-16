@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplcación Web para APIREST</title>
+    <!-- Parte de CSS de BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Se esta referenciando JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/JS/pedidos.js"></script>
+    <link rel="stylesheet" href="/CSS/Estilos.css">
+    <link rel="shortcut icon" href="#">
+
+</head>
+<body>
+    <div>
+        <h2><center>Proyecto de Lenguaje de Programación IV - Uso de APIs Rest</center></h2>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Lista de Pedidos</h3>
+                </div>                    
+            </div>                    
+            <div class="box-body">
+                <!-- table-responsive es clase de BootStrap -->
+                <div class="table table-responsive">
+                    <table class="table table_hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>ID SOCIO</th>
+                                <th>FECHA DE PEDIDO</th>
+                                <th>DETALLE</th>
+                                <th>SUB TOTAL</th>
+                                <th>TOTAL ISV</th>
+                                <th>TOTAL A PAGAR</th>
+                                <th>FECHA DE ENTREGA</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pedidos">                                
+                        </tbody>
+                    </table>
+                </div>
+            </div>               
+        </div>
+        <div class="formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Agregar Pedidos</h3>                        
+                </div> 
+                <div class="col-12">
+                    <form class="pedido">
+                        <label for="">ID SOCIO</label>
+                        <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese un Id para Socio">
+                        <label for="">FECHA DEL PEDIDO</label>
+                        <input type="text" id="FECHA_PEDIDO" class="form-control" placeholder="Ingrese la fecha que se hizo el pedido">
+                        <label for="">DETALLE</label>
+                        <input type="text" id="DETALLE" class="form-control" placeholder="Ingrese la descrición del detalle del pedido">
+                        <label for="">SUB TOTAL</label>
+                        <input type="text" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el subtotal del pedido">
+                        <label for="">TOTAL ISV</label>
+                        <input type="text" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el total del ISV">
+                        <label for="">TOTAL A PAGAR</label>
+                        <input type="text" id="TOTAL" class="form-control" placeholder="Ingrese el total a pagar del pedido">
+                        <label for="">FECHA DE ENTREGA</label>
+                        <input type="text" id="FECHA_ENTREGA" class="form-control" placeholder="Ingrese la fecha de entrega del pedido">
+                        <label for="">ESTADO</label>
+                        <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el estado del pedido">
+                        <hr>
+                        <div class="btnagregar">
+                            <input type="submit" id="btn_agregar" onclick="AgregarPedido()" value="Agregar Pedido" class="btn btn-success">
+                        </div>
+                    </form>
+                    
+                    <hr/>
+                </div>                          
+            </div>        
+        </div>
+    </div>
+    <footer>
+        <p> Derechos Reservados - LPIV-G6_20 </p>           
+    </footer>
+
+    <!-- Parte de JS de BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>

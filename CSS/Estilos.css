@@ -1,0 +1,12 @@
+/*Estilos del pie de página*/
+
+footer,h2 {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    clear: both;
+    background: rgb(32, 53, 241);
+    color: #fff;
+    text-align: center;
+}
